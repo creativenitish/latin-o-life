@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --nd-white: #fff;
+    --nd-offWhite: rgba(255, 255, 255, 0.5);
+    --nd-offRed: #ec5f65;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+// Footer
+footer {
+    background: var(--nd-offRed);
+    padding: 2rem 1rem;
+    color: var(--nd-white);
+    text-align: center;
+
+    .quick-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 1rem;
+
+        a {
+            text-transform: uppercase;
+            color: var(--nd-white);
+            font-size: 1.125rem;
+            padding: 0 0.875rem;
+            border-right: 2px solid var(--nd-white);
+            font-weight: 500;
+
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+
+    .copyright {
+        color: var(--nd-offWhite);
+    }
+}
